@@ -47,7 +47,7 @@ function handleSearch(event) {
 function countryListMurkup(countryArray) {
   return countryArray
     .map(({ name, flags }) => {
-      return `<li class="country-list__item"><img src="${flags.svg}" alt="${name.common}" class="country-list_img"><span class="country-list__name">${name.common}</span></li>`;
+      return `<li class="country-list-item"><img src="${flags.svg}" alt="${name.common}" class="country-list-img"><span class="country-list-name">${name.common}</span></li>`;
     })
     .join('');
 }
@@ -55,11 +55,11 @@ function countryListMurkup(countryArray) {
 function countryInfoMurkup(countryArray) {
   return countryArray
     .map(({ name, flags, capital, population, languages }) => {
-      return `<div class="country-info__name"><img src="${flags.svg}" alt="${
+      return `<div class="country-info-name"><img src="${flags.svg}" alt="${
         name.common
-      }" class="country-info__img" />${name.official}</div>
-        <p><span class="country-info__bold">Capital: </span>${capital}</p>
-        <p><span class="country-info__bold">Population: </span>${population}</p>
+      }" class="country-info-img" />${name.official}</div>
+        <p><span class="country-info-text">Capital: </span>${capital}</p>
+        <p><span class="country-info-text">Population: </span>${population}</p>
         <p><span class="country-info__bold">Languages: </span>${Object.values(
           languages
         ).join(', ')}</p>`;

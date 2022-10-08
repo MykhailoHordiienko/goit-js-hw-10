@@ -29,29 +29,29 @@ ol {
 	margin: 0;
 }
 
-.country-list__item {
+.country-list-item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 5px;
 }
 
-.country-list_img {
+.country-list-img {
 	display: block;
 	width: 200px;
 	margin-right: 15px;
 }
 
-.country-list__name {
+.country-list-name {
 	font-size: 25px;
 }
 
-.country-info__img {
+.country-info-img {
 	display: block;
 	width: 200px;
 	margin-right: 15px;
 }
 
-.country-info__name {
+.country-info-name {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -60,6 +60,6 @@ ol {
 	margin-bottom: 25px;
 }
 
-.country-info__bold {
+.country-info-text {
 	font-weight: 700;
 }
